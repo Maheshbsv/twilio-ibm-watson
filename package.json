@@ -1,0 +1,26 @@
+{
+  "name": "Twilio-Whatsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/Server.ts",
+    "start": "nodemon dist/Server.js",
+    "start:dev": "tsc-watch --pretty --preserveWatchOutput --outDir ./dist --onSuccess \"node dist/Server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.7.0",
+    "tslib": "^2.0.1",
+    "twilio": "^3.48.1",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "tsc-watch": "^4.2.9"
+  }
+}
